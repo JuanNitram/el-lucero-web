@@ -15,15 +15,15 @@
         "phpspec/phpspec": "~2.1"
     },
     "autoload": {
-        "files": [
-            "app/Helpers/arrays.php"
-        ],
         "classmap": [
             "database"
         ],
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/helpers/arrays.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [

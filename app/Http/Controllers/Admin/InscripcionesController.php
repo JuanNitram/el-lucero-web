@@ -29,6 +29,8 @@ class InscripcionesController extends Controller
         }
 
         $data['inscripciones'] = ModelInscripciones::all();
+
+        $data['section'] = 'Inscripciones';
         
         return view('admin.inscripciones.home')->with($data);        
     }

@@ -29,7 +29,11 @@ class AdminController extends Controller
             return Redirect::to('auth/login');
         }
         
-        return view('admin.home');
+        $data = array();
+
+        $data['section'] = 'Home';
+        
+        return view('admin.home')->with($data);
     }
 
     public function administradores()
@@ -40,6 +44,8 @@ class AdminController extends Controller
         }
 
         $data['users'] = ModelUser::all();
+
+        $data['section'] = 'Administradores';
         
         return view('admin.administradores.home')->with($data);
     }

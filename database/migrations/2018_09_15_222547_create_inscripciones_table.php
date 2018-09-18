@@ -20,7 +20,8 @@ class CreateInscripcionesTable extends Migration
                 $table->string('email');
                 $table->string('telefono');
                 $table->string('institucion')->nullable();
-                $table->string('promocional');
+                $table->string('cargo')->nullable();
+                $table->string('promocional')->nullable();
                 $table->integer('forma_pago');
                 $table->timestamps();
             });

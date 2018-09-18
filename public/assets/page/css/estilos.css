@@ -1,0 +1,402 @@
+/*-------------   variables   ------------- */
+:root {
+    --main-color-grisSuave: #E5E5E5;
+    --main-color-grisOscuro: #666666;
+    --main-color-azul: #0095D2;
+    --main-color-verde: #A4DB86;
+    --main-color-naranja: #D8AE6C;
+}
+
+
+/*-------------   generales   ------------- */
+font-family: 'Roboto', arial, sans-serif;
+font-family: 'Montserrat', arial, sans-serif;
+.titulo{
+    color: var(--main-color-azul);
+    font-weight: bold;
+    font-size: 3em;
+}
+.descripcion-titulo{
+    width: 70%;
+    margin: 5px 15% 15px;
+    color: var(--main-color-grisOscuro);
+    font: 1.1em;
+}
+
+
+/*-------------    menu   ------------- */
+
+nav{
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 10px 5%;
+    border-radius: 45px;
+    background-color: #ffffffcc;
+    -webkit-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    -moz-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+}
+nav img{
+    height: 50px;
+}
+nav button{
+    padding: 0;
+    border: none;
+}
+nav a{
+    color: var(--main-color-grisOscuro)!important;
+}
+nav a:hover{
+    color: var(--main-color-azul)!important;
+    font-weight: 600;
+}
+
+
+
+
+/*-------------    header   ------------- */
+
+header h1{
+    font-family: Montserrat;
+    color: var(--main-color-verde);
+    font-weight: 800;
+}
+header p{
+    font-family: Roboto;
+    color: white;
+    font-weight: 600;
+}
+header hr{
+    border-top: 3px solid var(--main-color-azul);
+}
+header a{
+        padding: 10px 45px!important;
+    background-image: linear-gradient(to right, #A4DB86 , #0095D2);
+    border-radius: 25px!important;
+    border: none!important;
+    color: #fff;
+}
+
+
+
+
+/*-------------    servicios   ------------- */
+.cuadro-exterior{
+    padding: 0 10px;
+}
+.cuadro-servicios{
+    padding: 15px;
+    border: 1px solid var(--main-color-grisSuave);
+    border-radius: 8px;
+    -webkit-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    -moz-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+}
+.cuadro-servicios h3{
+    color: var(--main-color-verde);
+    font-size: 1.4em;
+}
+.cuadro-servicios h4{
+    color: var(--main-color-grisOscuro);
+    font-size: 1.1em;
+}
+.cuadro-servicios img{
+    border-radius: 4px;
+}
+.cuadro-servicios hr{
+    border-color: var(--main-color-naranja);
+}
+.cuadro-servicios p{
+    color: var(--main-color-grisOscuro);
+}
+.serviciosChicos {
+    margin-top: 60px;
+}
+.serviciosChicos .cuadro-servicios{
+    padding:90px 10px;
+}
+.serviciosChicos .cuadro-servicios hr{
+    border-color: var(--main-color-verde);
+    border-top: 4px solid var(--main-color-verde);
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(0,149,210,0.1);
+    -moz-box-shadow: 0px 0px 15px 4px rgba(0,149,210,0.1);
+    box-shadow: 0px 0px 15px 4px rgba(0,149,210,0.1);
+}
+.serviciosChicos .cuadro-servicios p{
+    font-size: .7em
+}
+
+
+/*-------------   talleres y eventos   ------------- */
+#eventosYtalleres{
+    background-image: url(../images/degrade1.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#eventosYtalleres .descripcion-titulo{
+    margin-bottom: 100px
+}
+
+.contenedorTaller{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid var(--main-color-grisSuave);
+    border-radius: 8px;
+    -webkit-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    -moz-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+}
+
+.contenedorTaller img{
+    width: 100%;
+}
+.contenedorTaller .textoTalleres{
+    padding-left: 15px;
+    border-left: 4px solid var(--main-color-azul);
+    border-radius: 2px;
+}
+.contenedorTaller .textoTalleres a{
+    position: relative;
+    left: 650px;
+    background-color: #fff;
+    border: 2px solid var(--main-color-azul);
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: var(--main-color-azul);
+    font-weight: bold;
+}
+.contenedorTaller .textoTalleres a:hover{
+    background-color: var(--main-color-azul);
+    border: 2px solid var(--main-color-verde);
+    color: white;
+}
+
+
+
+/*-------------   Equipo de trabajo   ------------- */
+#equipoDeTrabajo{
+    height: 800px;
+    background-image: url(../images/degrade2.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#equipoDeTrabajo h3{
+    font-size: 1.5em;
+    color: var(--main-color-verde);
+}
+#equipoDeTrabajo hr{
+    border-color: var(--main-color-naranja);
+}
+#equipoDeTrabajo .descripcion-titulo{
+    margin-bottom: 50px
+}
+.personaDelEquipo{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid var(--main-color-grisSuave);
+    border-radius: 8px;
+    -webkit-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    -moz-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+}
+
+
+
+
+/*-------------   modal   ------------- */
+
+.modal-content {
+    min-height: 696px;
+}
+.modal-dialog {
+    max-width: 70%;
+    margin: 100px 15% auto;
+    color: var(--main-color-grisOscuro);
+}
+.modal-dialog h5{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    color: var(--main-color-azul);
+    font-size: 2em;
+}
+.modal-dialog input{
+    color: var(--main-color-grisSuave);
+}
+.modal-dialog button{
+    position: relative;
+    left: 950px;
+    background-color: var(--main-color-azul);
+}
+.modal-dialog button:hover{
+    background-color: var(--main-color-verde);
+}
+.form-group{
+    float: left;
+    margin: 10px 2% 30px;
+    width: 46%;
+}
+.form-control{
+    border: none;
+    border-bottom: 1px solid var(--main-color-naranja);
+    border-radius: 0;
+}
+.form-group spam, p spam{
+    color: red;
+}
+    
+
+.sk-fading-circle {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+  
+  .sk-fading-circle .sk-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .sk-fading-circle .sk-circle:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+            animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+  }
+  .sk-fading-circle .sk-circle2 {
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  .sk-fading-circle .sk-circle3 {
+    -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  .sk-fading-circle .sk-circle4 {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .sk-fading-circle .sk-circle5 {
+    -webkit-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  .sk-fading-circle .sk-circle6 {
+    -webkit-transform: rotate(150deg);
+        -ms-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  .sk-fading-circle .sk-circle7 {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .sk-fading-circle .sk-circle8 {
+    -webkit-transform: rotate(210deg);
+        -ms-transform: rotate(210deg);
+            transform: rotate(210deg);
+  }
+  .sk-fading-circle .sk-circle9 {
+    -webkit-transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  .sk-fading-circle .sk-circle10 {
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  .sk-fading-circle .sk-circle11 {
+    -webkit-transform: rotate(300deg);
+        -ms-transform: rotate(300deg);
+            transform: rotate(300deg); 
+  }
+  .sk-fading-circle .sk-circle12 {
+    -webkit-transform: rotate(330deg);
+        -ms-transform: rotate(330deg);
+            transform: rotate(330deg); 
+  }
+  .sk-fading-circle .sk-circle2:before {
+    -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s; 
+  }
+  .sk-fading-circle .sk-circle3:before {
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s; 
+  }
+  .sk-fading-circle .sk-circle4:before {
+    -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s; 
+  }
+  .sk-fading-circle .sk-circle5:before {
+    -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s; 
+  }
+  .sk-fading-circle .sk-circle6:before {
+    -webkit-animation-delay: -0.7s;
+            animation-delay: -0.7s; 
+  }
+  .sk-fading-circle .sk-circle7:before {
+    -webkit-animation-delay: -0.6s;
+            animation-delay: -0.6s; 
+  }
+  .sk-fading-circle .sk-circle8:before {
+    -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s; 
+  }
+  .sk-fading-circle .sk-circle9:before {
+    -webkit-animation-delay: -0.4s;
+            animation-delay: -0.4s;
+  }
+  .sk-fading-circle .sk-circle10:before {
+    -webkit-animation-delay: -0.3s;
+            animation-delay: -0.3s;
+  }
+  .sk-fading-circle .sk-circle11:before {
+    -webkit-animation-delay: -0.2s;
+            animation-delay: -0.2s;
+  }
+  .sk-fading-circle .sk-circle12:before {
+    -webkit-animation-delay: -0.1s;
+            animation-delay: -0.1s;
+  }
+  
+  @-webkit-keyframes sk-circleFadeDelay {
+    0%, 39%, 100% { opacity: 0; }
+    40% { opacity: 1; }
+  }
+  
+  @keyframes sk-circleFadeDelay {
+    0%, 39%, 100% { opacity: 0; }
+    40% { opacity: 1; } 
+  }
+
+  .sk-fading-circle-none {
+      display: none;
+  }
+
+  .form-none {
+      display: none;
+  }
+
+  .success{
+      text-align: center;
+  }
+
+  .success-none{
+    display: none;
+}

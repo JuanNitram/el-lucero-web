@@ -1,6 +1,4 @@
-@extends('admin.layout.layout')
-
-@section('title', 'Page Title')
+@extends('admin.layout.layout', ['section' => $section])
 
 @section('content')
 <div class="container-fluid">

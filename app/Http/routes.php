@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-}); 
+Route::get('/', 'Page\HomeController@index');
+
+Route::post('/save_inscription', 'Page\HomeController@save_inscription');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');

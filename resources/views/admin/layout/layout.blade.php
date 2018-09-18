@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>App Name - @yield('title')</title>
+        <title>El Lucero</title>
         <link rel="stylesheet" type="text/css" href="{{asset('assets/admin/css/bootstrap.min.css')}}"/>    
         <link rel="stylesheet" type="text/css" href="{{asset('assets/admin/css/preloader.css')}}"/>
         <link rel="stylesheet" type="text/css" href="{{asset('assets/admin/css/sidebar.css')}}"/>
@@ -15,7 +15,7 @@
                         <img class="manImg" src="{{asset('assets/admin/images/baseline_menu_white_18dp.png')}}"/>
                     </span>
                 </a>
-                <a href="{{ url('admin') }}" class="location-ref">Home</a>
+                <a href="{{ url('admin') }}" class="location-ref">{{$section}}</a>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                     <li class="nav-item active">
