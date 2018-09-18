@@ -39,7 +39,6 @@
                     </button>
                 </form>
             </nav>
-                    
             <div id="wrapper">
                 <div id="sidebar-wrapper">
                     <ul class="sidebar-nav">

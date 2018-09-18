@@ -38,6 +38,10 @@ body {
   right: 0;
 }
 
+.row-trash {
+  min-height: 88px;
+}
+
 .btn-hidden {
   display: none;
 }
