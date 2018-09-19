@@ -22,6 +22,7 @@ class CreateInscripcionesTable extends Migration
                 $table->string('institucion')->nullable();
                 $table->string('cargo')->nullable();
                 $table->string('promocional')->nullable();
+                $table->integer('taller_id');
                 $table->integer('forma_pago');
                 $table->timestamps();
             });

@@ -163,7 +163,7 @@
                                 <div class="textoTalleres text-left">
                                     <h3>Asesoría en Revenue Management</h3>
                                     <p>15 de Septiembre Montevideo</p>
-                                    <a class="inscription-btn" data-toggle="modal" data-target="#InscripcionTaller">inscribirse</a>
+                                    <a id="taller-mercedes" class="inscription-btn" data-toggle="modal" data-target="#InscripcionTaller">inscribirse</a>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                                 <div class="textoTalleres text-left">
                                     <h3>Asesoría en Revenue Management</h3>
                                     <p>15 de Septiembre Montevideo</p>
-                                    <a class="inscription-btn" data-toggle="modal" data-target="#InscripcionTaller">inscribirse</a>
+                                    <a  id="taller-colonia" class="inscription-btn" data-toggle="modal" data-target="#InscripcionTaller">inscribirse</a>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                                 <div class="textoTalleres text-left">
                                     <h3>Asesoría en Revenue Management</h3>
                                     <p>15 de Septiembre Montevideo</p>
-                                    <a class="inscription-btn" data-toggle="modal" data-target="#InscripcionTaller">inscribirse</a>
+                                    <a id="taller-paysandu" class="inscription-btn" data-toggle="modal" data-target="#InscripcionTaller">inscribirse</a>
                                 </div>
                             </div>
                         </div>
@@ -313,6 +313,13 @@
                 $('#inscription_form').show();
                 $('.success').hide();
             });
+
+            $('.inscription-btn').on('click', (e) => {
+                if(e.target.id == 'taller-mercedes') selected_taller = 1;
+                else if(e.target.id == 'taller-colonia') selected_taller = 0;
+                else selected_taller = 2;
+            });
+
             $('#inscription_form').submit((e) => {
                 e.preventDefault();
 
@@ -330,14 +337,18 @@
                     institucion: $('input[name="empresa"]').val(),
                     promocional: $('input[name="codigo"]').val(),
                     cargo: $('input[name="cargo"]').val(),
+                    taller_id: selected_taller,
                     forma_pago,
                     email: $('input[name="email"]').val(),
                     _token: $('input[name="_token"]').val(),
                 }).done(function(res){
+                    window.history.pushState("", "", "/");
                     $('.sk-fading-circle').hide();
                     $('.success').show();
                 });
+
             });
+
         });
     </script>
 @endpush

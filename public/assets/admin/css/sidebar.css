@@ -68,16 +68,17 @@ body {
   }
 
 .button-fill {
+    width: 190px;
     background: none;
     border: 1px solid;
     font: inherit;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1;
     margin: 0.5em;
     padding: 0.8em 0em;
     color: #585959;
     border-color:transparent;
-    transition: 0.25s;
+    /* transition: 0.25s; */
 }
 
 
@@ -85,6 +86,7 @@ body {
   background: none;
   border: 2px solid;
   font: inherit;
+  font-size: 19px;
   line-height: 1;
   margin: 0.5em;
   padding: 1em 1em;

@@ -1,7 +1,6 @@
 @extends('admin.layout.layout', ['section' => $section])
 
 @section('content')
-<div class="container-fluid">
         <div class="row row-trash">
             <div class="padding-nav-bar col-6">
               {{-- <a href="/admin/productos/nuevo"><button class="btn btn-secondary">Nuevo</button></a> --}}
@@ -22,6 +21,7 @@
                   <th>Cargo</th>
                   <th>Cod. Promocional</th>
                   <th>Forma de Pago</th>
+                  <th>Taller</th>
                   <th>Ingresado</th>
                 </tr>
               </thead>
@@ -36,6 +36,7 @@
                         <td>{{ $i->cargo or 'No definido' }}</td>
                         <td>{{ $i->promocional }}</td>
                         <td>{{ array_forma_pago($i->forma_pago) }}</td>
+                        <td>{{ array_talleres($i->taller_id) }}</td>
                         <td>{{ $i->created_at }}</td>
                     </tr>
                 @endforeach
@@ -43,15 +44,17 @@
             </table>
           </div>
       </div>
-      </div>
 @endsection
 
 @push('scripts')
     <script>
         $(document).ready(function(){
+            let inscripciones_table = new DataTable("#inscripciones_table", {
+                searchable: true,
+                fixedHeight: true,
+            });
             let selected_tr_id = 0;
             let tr_anterior; //undefined
-
             $("#inscripciones_table").delegate('tr', 'click', function(e) {
                 if($(e.currentTarget).parent()[0].tagName.toLowerCase() == 'tbody'){
                     if(!$(e.currentTarget).hasClass('tr-active') && selected_tr_id > 0){
@@ -75,13 +78,19 @@
             });
 
             $('#btn-eliminar').on('click', () => {
-                console.log(selected_tr_id);
+                $.post('/admin/inscripciones/eliminar/'+selected_tr_id, {
+                    _token: "{!! csrf_token() !!}",
+                }).done(function(res){
+                    inscripciones_table.destroy();
+                    $('tr#'+selected_tr_id).remove();
+                    inscripciones_table = new DataTable("#inscripciones_table", {
+                        searchable: true,
+                        fixedHeight: true,
+                    });
+                    // window.history.pushState("", "", "/");
+                });
             });
         });
 
-        new DataTable("#inscripciones_table", {
-          searchable: true,
-          fixedHeight: true,
-        });
     </script>
 @endpush
