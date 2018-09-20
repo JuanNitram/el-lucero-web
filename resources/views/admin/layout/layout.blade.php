@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="{{asset('assets/admin/css/sidebar.css')}}"/>
         <link rel="stylesheet" type="text/css" href="{{asset('assets/admin/css/styles.css')}}"/>    
         <link rel="stylesheet" type="text/css" href="{{asset('assets/admin/css/vanilla-dataTables.min.css')}}"/>
+        <link rel="stylesheet" type="text/css" href="{{asset('assets/admin/css/flatpickr.min.css')}}"/>
     </head>
     <body>
         <header>
@@ -17,14 +18,14 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a href="{{ url('admin') }}" class="location-ref">{{$section}}</a>
+                                <a href="{{ url('admin') . $url}}" class="location-ref">{{$section}}</a>
                             </li>
                         </ul>
                     </div>
                     
                     <form class="form-inline my-2 my-lg-0" action="{{ url('auth/logout') }}" method="GET">
-                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0 btn-nav" type="submit">Search</button>
+                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search" disabled>
+                        <button class="btn btn-secondary my-2 my-sm-0 btn-nav" type="submit" disabled>Search</button>
                         <button class="btn btn-secondary btn-nav" type="submit">Salir</button>
                     </form>
                 </nav>
@@ -54,6 +55,7 @@
         <script src="{{asset('assets/admin/js/bootstrap.min.js')}}"></script>
         <script src="{{asset('assets/admin/js/jquery-3.3.1.min.js')}}"></script>
         <script src="{{asset('assets/admin/js/vanilla-dataTables.min.js')}}"></script>
+        <script src="{{asset('assets/admin/js/moment.js')}}"></script>
         
         <script>
             $("#menu-toggle").click(function(e) {
