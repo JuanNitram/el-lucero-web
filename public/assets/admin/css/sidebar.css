@@ -18,14 +18,11 @@ body {
     z-index: 1000;
     position: fixed;
     left: 250px;
-    width: 0;
+    border-right: 1px solid #dee2e6;
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
     background: #fbfbfb;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
 
@@ -65,33 +62,30 @@ body {
     display: block;
     text-decoration: none;
     color: #585959;
+    max-height: 55px;
   }
 
 .button-fill {
     width: 190px;
     background: none;
-    border: 1px solid;
     font: inherit;
     font-size: 20px;
+    margin: 5px 0px 0px 8px;
     line-height: 1;
-    margin: 0.5em;
-    padding: 0.8em 0em;
+    padding: 0.6em 0em;
     color: #585959;
     border-color:transparent;
-    /* transition: 0.25s; */
 }
 
 
 .button-fill:hover{
-  background: none;
-  border: 2px solid;
+  background: #cdcfd2;
   font: inherit;
-  font-size: 19px;
+  font-size: 20px;
+  margin: 5px 0px 0px 8px;
   line-height: 1;
-  margin: 0.5em;
-  padding: 1em 1em;
-  color: #585959;
-  transition: 0.25s;
+  padding: 0.6em 0em;
+  color: #595a5a;
 }
 
   .sidebar-nav li a:hover {

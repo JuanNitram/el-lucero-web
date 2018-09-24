@@ -45,7 +45,11 @@
                         <td>{{ $i->email }}</td>
                         <td>{{ $i->telefono }}</td>
                         <td>{{ $i->institucion }}</td>
-                        <td>{{ ($i->cargo == null || $i->cargo == '') ? 'No definido' : $i->cargo }}</td>
+			@if($i->cargo == null || $i->cargo == '')
+	                        <td>{{ 'No definido' }}</td>
+			@else
+				<td>{{ $i->cargo }}</td>
+			@endif
                         <td>{{ $i->promocional }}</td>
                         <td>{{ array_forma_pago($i->forma_pago) }}</td>
                         <td>{{ array_talleres($i->taller_id) }}</td>
