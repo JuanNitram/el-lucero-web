@@ -17,8 +17,6 @@ font-family: 'Montserrat', arial, sans-serif;
     font-size: 3em;
 }
 .descripcion-titulo{
-    width: 70%;
-    margin: 5px 15% 15px;
     color: var(--main-color-grisOscuro);
     font-size: 0.9em;
 }
@@ -57,7 +55,7 @@ nav a:hover{
 /*-------------    header   ------------- */
 
 header {
-  background-image: url("../images/header.jpg");
+  background-image: url(../images/header.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: left center;
@@ -96,6 +94,20 @@ header a{
 
 
 
+/*-------------    que hacemos  ------------- */
+
+#queHacemos{
+    font-family: Roboto;
+}
+#queHacemos h2{
+    color: var(--main-color-azul);
+}
+#queHacemos p{
+    color: var(--main-color-grisOscuro);
+    margin-bottom: 40px;
+    
+}
+
 /*-------------    servicios   ------------- */
 #servicios h2{
     font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif; */
@@ -106,7 +118,6 @@ header a{
 #servicios p, #servicios li{
     font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif; */
     font-weight: 200;
-    font-size: .8em;
     color: var(--main-color-grisOscuro);
 }
 .cuadro-exterior{
@@ -232,10 +243,7 @@ header a{
 /*-------------   Equipo de trabajo   ------------- */
 #equipoDeTrabajo{
     padding-top: 0;
-   /* height: 800px;
-    background-image: url(../img/degrade2.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;*/
+   font-family: Roboto;
 }
 #equipoDeTrabajo .degrade2{
     padding: 50px;
@@ -267,14 +275,94 @@ header a{
     box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
 }
 
+/*-------------   evento  ------------- */
+#evento h4{
+    font-family: Roboto;
+}
+#evento h2{
+    color: var(--main-color-verde);
+    margin-bottom: 40px
+}
+#evento h4{
+    color: var(--main-color-grisOscuro);
+    font-size: 1.3em
+}
+#evento p{
+    font-family: Roboto;
+    color: var(--main-color-grisOscuro);
+    font-size: .8em
+}
+#evento p span{
+    text-decoration: underline
+}
+.cursosYaDictados{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid var(--main-color-grisSuave);
+    border-radius: 8px;
+    -webkit-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    -moz-box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+    box-shadow: -3px -1px 53px 0px rgba(60,189,229,0.1);
+}
+/*-------------   porfolio  ------------- */
 
+#porfolio {
+    background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(235,235,235,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(14%, rgba(255,255,255,1)), color-stop(100%, rgba(235,235,235,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(235,235,235,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(235,235,235,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(235,235,235,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 14%, rgba(235,235,235,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=0 );
+    font-family: Roboto;
+}
+#porfolio h2{
+    color: var(--main-color-azul);
+}
+#porfolio p{
+    color: var(--main-color-grisOscuro);
+    margin-bottom: 50px
+}
+    #porfolio img{
+    max-width: 95%;
+    height: 70px;
+    width: auto;
+    margin-bottom: 15px;
+}
+/*-------------   footer ------------- */
+
+footer{
+    background-color:  var(--main-color-azul);
+    padding: 25px;
+    color: white;
+    font-family: Roboto;
+}
+footer h2{
+    color:  white;
+}
+footer .descripcion-titulo{
+    margin-bottom: 40px;
+    color: white
+}
+footer h3{
+    border-bottom: 3px solid var(--main-color-verde);
+    padding-bottom: 5px;
+    display: inline-block;
+    font-size: 1.3em;
+}
+footer p{
+    margin-bottom: 10px;
+}
+footer i{
+    font-size: 1.2em;
+    margin-right: 10px;
+}
 
 
 /*-------------   modal   ------------- */
 
-.modal-content {
-    min-height: 696px;
-}
 
 .modal-dialog {
     max-width: 70%;
@@ -343,6 +431,12 @@ header a{
     .contenedorTaller .img-taller-hor{
         display: block
     }
+    .desktop{
+        display: none
+    }
+    .mobile{
+        display: block
+    }
 }
 @media (min-width: 768px) {
     header{
@@ -350,8 +444,7 @@ header a{
         background-image: url(../images/header.jpg);
     }
     .descripcion-titulo{
-        width: 70%;
-        margin: 5px 15% 15px;
+        
     }
     .contenedorTaller img{
         width: 100%;
@@ -366,12 +459,19 @@ header a{
     .contenedorTaller .img-taller-hor{
         display: none
     }
+    .desktop{
+        display: block
+    }
+    .mobile{
+        display: none
+    }
     
 }
 @media (min-width: 992px) {
     
     
 }
+
 
 /*-------------   preloader   ------------- */
 

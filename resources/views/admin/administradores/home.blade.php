@@ -4,9 +4,9 @@
 <div class="container-fluid">
     <div class="row">
       <div class="padding-nav-bar col-6">
-      <a href="{{ url('admin/administradores') . "/nuevo" }}"><button class="btn btn-secondary">Nuevo</button></a>
-        <button id="btn-eliminar" class="btn btn-secondary btn-hidden">Eliminar</button>
-        <button id="btn-editar" class="btn btn-secondary btn-hidden">Editar</button>
+      <a href="{{ url('admin/administradores') . "/nuevo" }}"><button class="btn btn-secondary btn-admin">Nuevo</button></a>
+        <button id="btn-eliminar" class="btn btn-secondary btn-hidden btn-admin">Eliminar</button>
+        <button id="btn-editar" class="btn btn-secondary btn-hidden btn-admin">Editar</button>
         
       </div>
     </div>

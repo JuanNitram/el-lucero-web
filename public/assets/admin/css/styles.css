@@ -219,3 +219,16 @@ body {
 .preloader-div{
   height:100vh;
 }
+
+.btn-admin{
+  background: #495054;
+  color: #fcf9ef;
+}
+
+.fa-padding {
+  padding-left: 12px;
+}
+
+.table-sm {
+  font-size: 14px;
+}

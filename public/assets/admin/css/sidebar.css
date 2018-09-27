@@ -1,151 +1,107 @@
 body {
-    overflow-x: hidden;
-  }
-
-  #wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-
-  #wrapper.toggled {
-    padding-left: 250px;
-  }
-
-  #sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    left: 250px;
-    border-right: 1px solid #dee2e6;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    background: #fbfbfb;
-    transition: all 0.5s ease;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-  }
-
-  #page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-  }
-
-  #wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-  }
-
-
-  /* Sidebar Styles */
-
-  .sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-  }
-
-  .sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #585959;
-    max-height: 55px;
-  }
-
-.button-fill {
-    width: 190px;
-    background: none;
-    font: inherit;
-    font-size: 20px;
-    margin: 5px 0px 0px 8px;
-    line-height: 1;
-    padding: 0.6em 0em;
-    color: #585959;
-    border-color:transparent;
+  /* font-size: .875rem; */
 }
 
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
 
-.button-fill:hover{
-  background: #cdcfd2;
-  font: inherit;
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 48px; /* Height of navbar */
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
   font-size: 20px;
-  margin: 5px 0px 0px 8px;
-  line-height: 1;
-  padding: 0.6em 0em;
-  color: #595a5a;
+  color: #333;
+  margin: 5px;
 }
 
-  .sidebar-nav li a:hover {
+.nav-link:hover {
+    font-size: 20px !important;
+    background: #242a2e12;
+    margin: 5px;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #fbfbfb;
+  background: #495054;
+  margin: 5px;
+}
+
+.nav-link-logout:hover{
+    color: #fbfbfb;
     text-decoration: none;
-    color: rgb(148, 147, 147);
-    background: rgba(255, 255, 255, 0.2);
-  }
+}
 
-  .sidebar-nav li a:active, .sidebar-nav li a:focus {
-    text-decoration: none;
-  }
+.nav-link-logout{
+  color: #fbfbfb;
+  text-decoration: none;
+}
 
-  .sidebar-nav>.sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
-  }
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
 
-  .sidebar-nav>.sidebar-brand a {
-    color: #999999;
-  }
+/*
+ * Navbar
+ */
 
-  .sidebar-nav>.sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-  }
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
 
-  @media(min-width:768px) {
-    #wrapper {
-      padding-left: 0;
-    }
-    #wrapper.toggled {
-      padding-left: 250px;
-    }
-    #sidebar-wrapper {
-      width: 0;
-    }
-    #wrapper.toggled #sidebar-wrapper {
-      width: 250px;
-    }
-    #page-content-wrapper {
-      padding: 20px;
-      position: relative;
-    }
-    #wrapper.toggled #page-content-wrapper {
-      position: relative;
-      margin-right: 0;
-    }
-  }
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
 
-  .location-ref{
-    text-decoration: none;
-    padding-left: 25px;
-    font-size: 25px;
-    color: #fff;
-  }
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
 
-  .location-ref:hover{
-    text-decoration: none;
-    padding-left: 25px;
-    font-size: 25px;
-    color: rgb(214, 211, 211);
-  }
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/*
+ * Utilities
+ */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }

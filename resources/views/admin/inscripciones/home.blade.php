@@ -11,18 +11,18 @@
                         <input id="to-date" type="text" class="form-control" placeholder="Hasta">
                     </div>
                     <div class="col-2">
-                            <button id="btn-buscar" class="btn btn-secondary">Buscar</button>
+                            <button id="btn-buscar" class="btn btn-secondary btn-admin">Buscar</button>
                     </div>
                     <div class="col-6 text-right">
-                            <button id="btn-eliminar" class="btn btn-secondary btn-hidden">Eliminar</button>
-                            <button id="btn-exportar" class="btn btn-secondary">Exportar</button>
+                            <button id="btn-eliminar" class="btn btn-secondary btn-hidden btn-admin">Eliminar</button>
+                            <button id="btn-exportar" class="btn btn-secondary btn-admin">Exportar</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
           <div id="inscripciones_table_holder" class="col-12">
-            <table id="inscripciones_table" class="table">
+            <table id="inscripciones_table" class="table table-sm">
               <thead>
                 <tr>
                   <th>Name</th>
@@ -52,7 +52,7 @@
                         <td>{{ date_to_YMD_pretty($i->created_at) }}</td>
                     </tr>
                 @endforeach
-              </tbody>
+              </tbody>  
             </table>
           </div>
       </div>
@@ -139,11 +139,11 @@
                         '<td>'+ i.promocional + '</td>'+
                         '<td>'+ array_forma_pago(i.forma_pago) + '</td>'+
                         '<td>'+ array_talleres(i.taller_id) + '</td>'+    
-                        '<td>'+ i.created_at + '</td></tr>'
+                        '<td>'+ date_to_YMD_pretty(i.created_at) + '</td></tr>'
                     });
                     
                     let table_ins = `
-                    <table id="inscripciones_table" class="table">
+                    <table id="inscripciones_table" class="table table-sm">
                         <thead>
                             <tr>
                             <th>Name</th>
@@ -194,5 +194,13 @@
             data = ['Presencial','Transferencia'];
             return data[value];
         }
+
+        function date_to_YMD_pretty(date){
+            let ex = date.split(" ");
+            let ex_ = ex[0].split("-");
+            date = ex_[2] + "/" + ex_[1] + "/" + ex_[0];
+            return date;
+        }
+
     </script>
 @endpush

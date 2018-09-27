@@ -15,6 +15,9 @@
         <div class="collapse navbar-collapse form-inline" id="navbarText">
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#queHacemos">Que Hacemos?</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#servicios">Servicios</a>
                 </li>
                 <li class="nav-item">
@@ -24,7 +27,10 @@
                     <a class="nav-link js-scroll-trigger" href="#equipoDeTrabajo">Equipo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#glitch">contacto</a>
+                    <a class="nav-link js-scroll-trigger" href="#evento">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contacto">contacto</a>
                 </li>
             </ul>
         </div>
@@ -49,6 +55,26 @@
             </div>
         </div>
     </header>
+
+     <!-- que hacemos -->
+     <section id="queHacemos">
+        <div class="container-fluid">
+                <div class="row justify-content-md-center text-center ">
+                    <div class="col-12">
+                        <h2 class="titulo ">¿QUE HACEMOS?</h2>
+                        <p class="descripcion-titulo">Nuestra principal labor es ayudar al cliente o entidad a articular la propuesta y facilitarle las herramientas y contactos para que pueda llevarla a cabo.</p>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-md-center text-center ">
+                <div class="col-10">
+                    <img src="{{asset('assets/page/images/animacionInicio.gif')}}" width="100%" class="desktop">
+                    <img src="{{asset('assets/page/images/animacionIniciocel.gif')}}" width="100%" class="mobile">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- servicios -->
     <section id="servicios" class="bg-white">
@@ -306,9 +332,9 @@
                     <div class=" personaDelEquipo text-left">
                         <h3>Maria Eugenia Gonzalez</h3>
                         <p>Asesora en Turismo & Investigación </p>
-                        <img src="{{asset('assets/page/images/mariana.jpg')}}" width="100%">
+                        <img src="{{asset('assets/page/images/mEugenia.png')}}" width="100%">
                         <hr>
-                        <p>Resolutiva, porque me gusta atender al cliente y superar sus expectativas, solucionando sus necesidades. Emprendedora, porque me gusta generar, facilitar posibilidades a las personas y tomar nuevos desafíos. Inquieta en busca de mejorar la productividad y rentabilidad de los negocios. Turismo, porque es donde me he desarrollado profesionalmente desde hace 17 años.</p>
+                        <p>Licenciada en Dirección de Empresas Turísticas de la UCUDAL y Técnica de la Escuela Superior de Hotelería, Gastronomía, y Turismo del Consejo de Educación Técnico Profesional. Docente y Asistente de Investigación en la Universidad Católica del Uruguay.<br>Cofundadora de Siempre Hay Tours, emprendimiento que propone poner en valor la cultura uruguaya</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -324,40 +350,182 @@
             </div>
         </div>
     </section>
-    <!--<section>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <h1>jhalsjdfhahdfjhd</h1>
-        <p>ahsdfoiajsdñfkañsdkfñadfñalkfalkfdf</p>
-    </div>
-    <div class="carousel-item">
-      <h1>jhalsjdfhahdfjhd</h1>
-        <p>ahsdfoiajsdñfkañsdkfñadfñalkfalkfdf</p>
-    </div>
-    <div class="carousel-item">
-      <h1>jhalsjdfhahdfjhd</h1>
-        <p>ahsdfoiajsdñfkañsdkfñadfñalkfalkfdf</p>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-    </section>-->
+    
+    <!-- Evento -->
+    <section id="evento">
+        <div class="container-fluid">
+                <div class="row justify-content-md-center text-center ">
+                    <div class="col-12">
+                        <h2 class="titulo ">EVENTOS</h2>
+                        <p class="descripcion-titulo">Talleres impartidos</p>
+                    </div>
+                </div>
+        </div>
+        <div class="container">
+                <div class="row justify-content-center text-left ">
+                    <div class="col-10 col-sm-4 col-md-3">
+                        <div class="cursosYaDictados">
+                            <h4 class="">Herramientas para obtener una empresa sana, rentable y en crecimiento</h4>
+                            <p class=""><span>Entidad:</span> Programa de AL-Invest apoyo de Union Europea, Camara de Comercio y Estudio SVET</p>
+                            <p class=""><span>Lugar y fecha:</span> Montevideo 30/09/16 - Colonia del Sacramento 14/10/2016 – Maldonado 4/11/2016</p>
+                            <p class=""><span>Horas impartidas:</span> 8</p>
+                            <p class=""><span>Resumen Títulos Ponencias:</span> Comercialización. Importancia de la selección del producto y fijación de precios. Formas de promoción y gestión de marca. Herramientas para la gestión eficiente de canales de distribución.</p>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-4 col-md-3">
+                        <div class="cursosYaDictados">
+                            <h4 class="">Marketing Digital: Taller para brillas en las redes.</h4>
+                            <p class=""><span>Entidad:</span> Estudio YoTrabajo</p>
+                            <p class=""><span>Lugar y fecha:</span> Colonia del Sacramento, 16/8/17 – 13/9/17 – 4/10/17</p>
+                            <p class=""><span>Horas impartidas:</span> 9</p>
+                            <p class=""><span>Resumen Títulos Ponencias:</span> Introducción a Marketing Digital y Redes Sociales. Planificación de Campañas Digitales. Planificación Multicanal.</p>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-4 col-md-3">
+                        <div class="cursosYaDictados">
+                            <h4 class="">Taller Comercialización Turística</h4>
+                            <p class=""><span>Entidad:</span>  Estudio El lucero</p>
+                            <p class=""><span>Lugar y fecha:</span> Centro Comercial e Industrial Carmelo 17/08/2018</p>
+                            <p class=""><span>Horas impartidas:</span> 4</p>
+                            <p class=""><span>Resumen Títulos Ponencias:</span> Marketing de Servicios en el sector turístico. Claves y conceptos para vender servicios.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+    </section>
+    
+    <!-- Porfolio -->
+    <section id="porfolio">
+        <div class="container-fluid">
+                <div class="row justify-content-md-center text-center ">
+                    <div class="col-12">
+                        <h2 class="titulo ">PORFOLIO</h2>
+                        <p class="descripcion-titulo">Proyectos en los que hemos participado</p>
+                    </div>
+                </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-md-center text-center ">
+                <div id="carouselExampleIndicators" class="carousel slide col-12" data-ride="carousel">
+                    <!--<ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row justify-content-center text-center">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img class="" src="{{asset('assets/page/images/icons/figariFood.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img class="" src="{{asset('assets/page/images/icons/figari.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img class="" src="{{asset('assets/page/images/icons/figariHotel.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img class="" src="{{asset('assets/page/images/icons/sacramentoManagment.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img class="" src="{{asset('assets/page/images/icons/SART.png')}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row justify-content-center text-center">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/arapey-thermal.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/BIT.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/logoRc.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/radison.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/logoPsh.png')}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row justify-content-center text-center">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/sunset.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/frontier.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/logoPDA.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/logoPDV.png')}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row justify-content-center text-center">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/fb.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/bh1.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/DaysInn.png')}}">
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+                                        <img src="{{asset('assets/page/images/icons/DaysInnMdo.png')}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only" style="color: black">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-    <footer>
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row justify-content-center text-center ">
+            <div class="col-12">
+                <h2 class="titulo ">CONTACTO</h2>
+                <p class="descripcion-titulo">Nuestra base está en Montevideo y Colonia del Sacramento, con cobertura a nivel Nacional de modo remoto.</p>
+            </div>
+            <div id="mapa" class="col-sm-10 col-md-6 col-lg-6 col-xl-4 col-12">
+                <div id="map" style="height: 300px"></div>
+            </div>
+            <div id="informacion" class="col-sm-10 col-md-6 col-lg-6 col-xl-4 col-12 text-left">
+                <h3>MONTEVIDEO</h3>
+                <p><i class="material-icons">phone</i>+ 598 99 371 957</p>
+                <p><i class="material-icons">email</i>gfrick@estudioellucero.com</p>
+                <h3>COLONIA DEL SACRAMENTO</h3>
+                <p><i class="material-icons">phone</i>+598 98 450 870</p>
+                <p><i class="material-icons">email</i>msilva@estudioellucero.com</p>
+            </div>
+        </div>
     </footer>
 
     <!-- Modal -->

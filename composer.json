@@ -22,7 +22,8 @@
             "App\\": "app/"
         },
         "files": [
-            "app/helpers/arrays.php"
+            "app/helpers/arrays.php",
+            "app/helpers/helpers.php"
         ]
     },
     "autoload-dev": {

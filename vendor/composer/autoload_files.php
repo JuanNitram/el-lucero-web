@@ -18,4 +18,5 @@ return array(
     'f0906e6318348a765ffb6eb24e0d0938' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
     '58571171fd5812e6e447dce228f52f4d' => $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
     '06e94d2769b70b2615c784359a7e5510' => $baseDir . '/app/helpers/arrays.php',
+    '9eb92a60b23a168bdc5f3366f76ebf52' => $baseDir . '/app/helpers/helpers.php',
 );

@@ -16,7 +16,7 @@
                     <label for="formGroupExampleInput2">Contrasena *</label>
                     <input name="password" type="password" class="form-control" id="formGroupExampleInput2" placeholder="" required>
                 </div>
-                <button id="btn-guardar" type="submit" class="btn btn-secondary">Guardar</button>
+                <button id="btn-guardar" type="submit" class="btn btn-secondary btn-admin">Guardar</button>
                 {!! csrf_field() !!}
             </form>
         </div>
